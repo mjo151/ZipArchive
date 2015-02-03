@@ -5,7 +5,7 @@ using ObjCRuntime;
 using Foundation;
 using UIKit;
 
-namespace ZipArchive
+namespace MiniZip
 {
     // The first step to creating a binding is to add your native library ("libNativeLibrary.a")
     // to the project by right-clicking (or Control-clicking) the folder containing this source
@@ -65,7 +65,7 @@ namespace ZipArchive
     //
 
     [BaseType (typeof (NSObject))]
-    interface ZipArchive
+    interface ZipArchive : IDisposable
     {
         [Export ("UnzipOpenFile:Password:")]
         bool UnzipOpenFile(string zipFileName, string password);
@@ -78,6 +78,18 @@ namespace ZipArchive
 
         [Export ("UnzipFileTo:overWrite:")]
         bool UnzipFileTo(string path, bool overwrite);
+
+        [Export ("CreateZipFile2:")]
+        bool CreateZipFile(string zipFileName);
+
+        [Export ("CreateZipFile2:Password:")]
+        bool CreateZipFile(string zipFileName, string password);
+
+        [Export ("addFileToZip:newname:")]
+        bool AddFile(string file, string newName);
+
+        [Export ("CloseZipFile2")]
+        bool CloseZipFile();
     }
 }
 
