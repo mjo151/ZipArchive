@@ -11,8 +11,10 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = C9C36EF7160AC3C0005BED39 /* Build configuration list for PBXAggregateTarget "ZipArchive" */;
 			buildPhases = (
+				033F376F1A82BC0400EC3F90 /* ShellScript */,
 			);
 			dependencies = (
+				033F37871A82C0A800EC3F90 /* PBXTargetDependency */,
 				C9C36EFD160AC3C9005BED39 /* PBXTargetDependency */,
 				C9C36EFB160AC3C6005BED39 /* PBXTargetDependency */,
 			);
@@ -22,6 +24,20 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		033F37721A82C06300EC3F90 /* ZipArchive_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ZipArchive_Prefix.pch */; };
+		033F37731A82C06300EC3F90 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E8EBF7124F3D170047C862 /* ZipArchive.h */; settings = {ATTRIBUTES = (); }; };
+		033F37741A82C06300EC3F90 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E8EBE3124F3D030047C862 /* crypt.h */; };
+		033F37751A82C06300EC3F90 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E8EBE5124F3D030047C862 /* ioapi.h */; };
+		033F37761A82C06300EC3F90 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E8EBE8124F3D030047C862 /* mztools.h */; };
+		033F37771A82C06300EC3F90 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E8EBEA124F3D030047C862 /* unzip.h */; };
+		033F37781A82C06300EC3F90 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E8EBEC124F3D030047C862 /* zip.h */; };
+		033F377A1A82C06300EC3F90 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EBE4124F3D030047C862 /* ioapi.c */; };
+		033F377B1A82C06300EC3F90 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EBE7124F3D030047C862 /* mztools.c */; };
+		033F377C1A82C06300EC3F90 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EBE9124F3D030047C862 /* unzip.c */; };
+		033F377D1A82C06300EC3F90 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EBEB124F3D030047C862 /* zip.c */; };
+		033F377E1A82C06300EC3F90 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EBF8124F3D170047C862 /* ZipArchive.m */; };
+		033F37801A82C06300EC3F90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		033F37811A82C06300EC3F90 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E8EBDB124F3CD70047C862 /* libz.dylib */; };
 		AA747D9F0F9514B9006C5449 /* ZipArchive_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ZipArchive_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		C908A95C160AC26D000395DB /* ZipArchive_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ZipArchive_Prefix.pch */; };
@@ -65,6 +81,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		033F37861A82C0A800EC3F90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 033F37701A82C06300EC3F90;
+			remoteInfo = "ZipArchive ios simulator";
+		};
 		C95AB36717E1C37800120861 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -96,6 +119,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		033F37851A82C06300EC3F90 /* libZipArchive ios copy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libZipArchive ios copy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA747D9E0F9514B9006C5449 /* ZipArchive_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C908A96F160AC26D000395DB /* libZipArchive-mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libZipArchive-mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +163,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		033F377F1A82C06300EC3F90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033F37801A82C06300EC3F90 /* Foundation.framework in Frameworks */,
+				033F37811A82C06300EC3F90 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C908A969160AC26D000395DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,6 +222,7 @@
 				C908A96F160AC26D000395DB /* libZipArchive-mac.a */,
 				C95AB35817E1C37700120861 /* ZipArchive ios Tests.xctest */,
 				C95AB37417E1C47D00120861 /* ZipArchive mac Tests.xctest */,
+				033F37851A82C06300EC3F90 /* libZipArchive ios copy.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -338,6 +372,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		033F37711A82C06300EC3F90 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033F37721A82C06300EC3F90 /* ZipArchive_Prefix.pch in Headers */,
+				033F37731A82C06300EC3F90 /* ZipArchive.h in Headers */,
+				033F37741A82C06300EC3F90 /* crypt.h in Headers */,
+				033F37751A82C06300EC3F90 /* ioapi.h in Headers */,
+				033F37761A82C06300EC3F90 /* mztools.h in Headers */,
+				033F37771A82C06300EC3F90 /* unzip.h in Headers */,
+				033F37781A82C06300EC3F90 /* zip.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C908A95B160AC26D000395DB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,6 +417,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		033F37701A82C06300EC3F90 /* ZipArchive ios simulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 033F37821A82C06300EC3F90 /* Build configuration list for PBXNativeTarget "ZipArchive ios simulator" */;
+			buildPhases = (
+				033F37711A82C06300EC3F90 /* Headers */,
+				033F37791A82C06300EC3F90 /* Sources */,
+				033F377F1A82C06300EC3F90 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZipArchive ios simulator";
+			productName = ZipArchive;
+			productReference = 033F37851A82C06300EC3F90 /* libZipArchive ios copy.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		C908A95A160AC26D000395DB /* ZipArchive mac */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C908A96C160AC26D000395DB /* Build configuration list for PBXNativeTarget "ZipArchive mac" */;
@@ -473,6 +538,7 @@
 			targets = (
 				C9C36EF6160AC3C0005BED39 /* ZipArchive */,
 				D2AAC07D0554694100DB518D /* ZipArchive ios */,
+				033F37701A82C06300EC3F90 /* ZipArchive ios simulator */,
 				C908A95A160AC26D000395DB /* ZipArchive mac */,
 				C95AB35717E1C37700120861 /* ZipArchive ios Tests */,
 				C95AB37317E1C47D00120861 /* ZipArchive mac Tests */,
@@ -499,7 +565,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		033F376F1A82BC0400EC3F90 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}-ios.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}-simulator.a\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		033F37791A82C06300EC3F90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033F377A1A82C06300EC3F90 /* ioapi.c in Sources */,
+				033F377B1A82C06300EC3F90 /* mztools.c in Sources */,
+				033F377C1A82C06300EC3F90 /* unzip.c in Sources */,
+				033F377D1A82C06300EC3F90 /* zip.c in Sources */,
+				033F377E1A82C06300EC3F90 /* ZipArchive.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C908A963160AC26D000395DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -543,6 +637,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		033F37871A82C0A800EC3F90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 033F37701A82C06300EC3F90 /* ZipArchive ios simulator */;
+			targetProxy = 033F37861A82C0A800EC3F90 /* PBXContainerItemProxy */;
+		};
 		C95AB36817E1C37800120861 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D2AAC07D0554694100DB518D /* ZipArchive ios */;
@@ -593,6 +692,41 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		033F37831A82C06300EC3F90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/ZipArchive.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZipArchive_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "ZipArchive-simulator";
+				SDKROOT = iphonesimulator;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		033F37841A82C06300EC3F90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/ZipArchive.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZipArchive_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "ZipArchive-simulator";
+				SDKROOT = iphonesimulator;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		1DEB921F08733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -659,6 +793,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/ZipArchive.dst;
@@ -677,6 +812,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DSTROOT = /tmp/ZipArchive.dst;
 				GCC_MODEL_TUNING = G5;
@@ -860,6 +996,7 @@
 		C9C36EF8160AC3C0005BED39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -868,6 +1005,7 @@
 		C9C36EF9160AC3C0005BED39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -876,6 +1014,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		033F37821A82C06300EC3F90 /* Build configuration list for PBXNativeTarget "ZipArchive ios simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033F37831A82C06300EC3F90 /* Debug */,
+				033F37841A82C06300EC3F90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ZipArchive ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
